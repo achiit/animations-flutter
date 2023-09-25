@@ -4,7 +4,7 @@ In the `initState` method of our Flutter app, we set up the animation for our sp
 
 - We create an `AnimationController` named `_controller`. This controller manages our animation and ensures it runs smoothly. We pass in `vsync: this` to sync the animation with the widget's lifecycle.
 
-- Next, we define an `Animation<double>` named `_animation`. This defines the range of values our animation will go through. In our case, it goes from 0 to `2 * pi`, which represents a full circle in radians.
+- Next, we define an `Animation<double>` named `_animation`. This defines the range of values our animation will go through. In our case, it goes from 0 to `2 * pi` basically as controller has a value of 0 to 1, so we bind 0 to 0radians and 1 to 2pi radians, which represents a full circle in radians.
 
 - We use `_controller.repeat()` to make the animation repeat indefinitely, creating a continuous spinning effect.
 
